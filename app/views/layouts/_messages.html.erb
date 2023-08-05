@@ -1,3 +1,10 @@
-<% flash.each do |type, msg| %>
-  <%= msg %>
-<% end %>
+<div class="row justify-content-center">
+  <div class="col-10">
+    <% flash.each do |type, msg| %>
+      <div class="alert alert-success  fade show" role="alert">
+        <%= msg %>
+        <button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <% end %>
+  </div>
+</div>
