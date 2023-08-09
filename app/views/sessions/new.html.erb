@@ -1,14 +1,6 @@
 <div class="container">
   <div class="row justify-content-center mt-4">
     <%= form_with scope: :session, url: login_path, class:"shadow  mb-5 bg-info rounded", local: true do |f| %>
-
-      <div class=" row mt-4">
-        <%= f.label :username, class:"form-label col-2 text-light" %>
-        <div class= "col-10">
-          <%= f.text_field :username, class:"form-control shadow rounded", placeholder: 'Enter a username' %>
-        </div>
-      </div>
-
       <div class="row mt-4">
         <%= f.label :email, class:"form-label col-2 text-light"  %>
         <div class= "col-10">
